@@ -2,7 +2,7 @@ import API from "../../backend"; // API means http://localhost:8000/api/
 
 export const signup = (user) => {
   return fetch(`${API}/signup`, {
-    Method: "POST",
+    method: "POST",
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -17,7 +17,7 @@ export const signup = (user) => {
 
 export const signin = (user) => {
   return fetch(`${API}/signin`, {
-    Method: "POST",
+    method: "POST",
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
